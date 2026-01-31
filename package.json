@@ -1,0 +1,33 @@
+{
+  "name": "safe-env-lite",
+  "version": "1.0.0",
+  "description": "Define env vars once & get validated, typed, and safe access to them everywhere — minimal, zero-boilerplate.",
+  "main": "dist/cjs/index.cjs.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf dist",
+    "test": "vitest",
+    "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicocarlier/safe-env-lite.git"
+  },
+  "keywords": ["env", "validation", "typescript", "config"],
+  "author": "Nicolas Carlier <nicholas.carlier@abridge.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.0",
+    "vitest": "^1.1.0",
+    "ts-node": "^10.9.1",
+    "rimraf": "^3.0.2",
+    "eslint": "^8.0.0"
+  },
+  "type": "module"
+}
